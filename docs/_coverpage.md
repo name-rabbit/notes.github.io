@@ -8,5 +8,5 @@
 - 无需生成 html 文件
 - 众多主题
 
-[GitHub](https://name-rabbit.github.io/notes.github.io/#/)
+[GitHub](https://github.com/name-rabbit/notes.github.io)
 [Get Started](README)
