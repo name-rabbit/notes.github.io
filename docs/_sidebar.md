@@ -3,7 +3,7 @@
 * [指南](guide.md)
 
 * 后端技术
-
+* [JavaSE简洁版](javase/01_Java%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
 * [JavaSE~~start](javase.md)
     
     * go:point_down::point_down::point_down::point_down::point_down::point_down::point_down::point_down::point_down:go
