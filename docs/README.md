@@ -1,11 +1,6 @@
 # Headline
 
 > An awesome project.
-## docsify hello
+## docsify hello<!-- {docsify-ignore} -->
 
 
-## Header <!-- {docsify-ignore} -->
-```java
-public 
-
-```
