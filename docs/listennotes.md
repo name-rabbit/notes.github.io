@@ -96,9 +96,54 @@ lombok简化代码（getter和setter以及equals）的插件
 
 静态（只有一份，只加载一次）优先，父类优先，new对象打印再构造方法打印
 
+静态方法只能引用静态属性
+
+静态代码块：只执行一次，并且时间点在构造器之前，在静态属性初始化之后
+
 ![image-20220715154047027](img/static.png)
 
 ```java
 hasNextInt()//判断下一一个输入是否是整数，如是返回TRUE
 Class.forName(className).newInstance()//创建这个类的实例对象
 ```
+
+
+
+# 7.18
+
+# 接口
+
+代码训练 、画好导图、理清思维再动手
+
+继承is j接口like
+
+先写继承再写实现(A extends B implements C)，
+
+可以将接口理解为抽象类的一种特殊情况（抽象有属性可定义为private，接口叫共有的变量 public static final
+
+面向接口编程（抽象化，避免牵一发而动全身），如果要改变方法只需再添加一个具体的类去实现它就可以了，可以做到开闭原则（里氏代换原则：对扩展开放，对修改关闭）
+
+实现了类型跨界，强转为WiFi（接口）都可以传到方法里面调用connect行为
+
+![image-20220718102529631](D:%5Cmy-project%5Cnotes.github.io%5Cdocs%5Cjavase%5Cimg%5Cimage-20220718102529631.png)
+
+贷款计算案例
+
+```
+// 1 - 新增一个接口，把要提取的方法封装到接口中来
+// 2 - 实现接口中的方法
+// 3 - 以接口的方式定义成员变量
+    private MonthlyCalculator rateCalc;// = new MonthlyCalculatorImpl1(); // 计算月利率的变量
+    // 4 - 通过构造器从外部传递一个具体的实现者
+        this.rateCalc = rateCalc;
+```
+
+![image-20220718104214099](D:%5Cmy-project%5Cnotes.github.io%5Cdocs%5Cjavase%5Cimg%5Cimage-20220718104214099.png)
+
+jdk新特性，默认default方法可以具体实现
+
+![image-20220718141510843](D:%5Cmy-project%5Cnotes.github.io%5Cdocs%5Cjavase%5Cimg%5Cimage-20220718141510843.png)
+
+ 通过创建接口，并进行实现，传入接口参数，然后调用方法
+
+![image-20220718173943161](D:%5Cmy-project%5Cnotes.github.io%5Cdocs%5Cjavase%5Cimg%5Cimage-20220718173943161.png)
